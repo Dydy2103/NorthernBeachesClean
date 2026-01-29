@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Book a Cleaning — NeonClean</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="logo"></span><span>NeonClean</span></a>
+      <button class="nav-toggle" data-nav-toggle>Menu</button>
+      <nav class="menu" data-menu>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html" class="active">Book</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="mt-0">Book a Cleaning</h1>
+      <p class="mt-8">Select your preferred service, date and time. Your request will be <strong>reviewed</strong> and we’ll send a confirmation once approved.</p>
+
+      <!-- Info cards -->
+      <div class="grid grid--3 mt-24">
+        <div class="card">
+          <div class="icon">📅</div>
+          <h3>Step 1 — Request</h3>
+          <p>Fill in the form below with your details and preferred schedule.</p>
+        </div>
+        <div class="card">
+          <div class="icon">✅</div>
+          <h3>Step 2 — Approval</h3>
+          <p>We verify availability and may contact you if we need more info.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📨</div>
+          <h3>Step 3 — Confirmation</h3>
+          <p>You receive a confirmation email with appointment details.</p>
+        </div>
+      </div>
+
+      <!-- Google Calendar embed (availability preview) OPTIONAL -->
+      <div class="card mt-32">
+        <h3 class="mt-0">Availability (Preview)</h3>
+        <p class="mt-8">This calendar shows general availability. Final times are confirmed after review.</p>
+        <!-- Replace the src with your public Google Calendar embed URL if you want -->
+        <div style="position:relative; padding-top:56.25%; border:1px solid var(--border); border-radius:14px; overflow:hidden;">
+          <iframe title="Calendar"
+            src="about:blank"
+            style="position:absolute; inset:0; width:100%; height:100%; border:0; background:rgba(255,255,255,.02)">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Google Form embed -->
+      <div class="card mt-32">
+        <h3 class="mt-0">Booking Request Form</h3>
+        <p class="mt-8">Complete the form to request your cleaning. Confirmation is sent after approval.</p>
+        <!-- Paste your Google Form embed link below (File → Embed HTML in Google Forms) -->
+        <!-- Example: <iframe src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true" width="100%" height="1200" frameborder="0">Loading…</iframe> -->
+        <div style="border:1px dashed var(--border); border-radius:12px; padding:16px; color:var(--muted)">
+          <strong>Embed your Google Form here.</strong><br/>
+          In Google Forms: Send → &lt;&gt; Embed → copy the iframe and paste it here.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer section--tight">
+    <div class="container footer__grid">
+      <div><div class="brand"><span class="logo"></span><span>NeonClean</span></div></div>
+      <div><h4 class="mt-0">Need help?</h4><p>Write to <a href="mailto:hello@neonclean.example">hello@neonclean.example</a></p></div>
+      <div><h4 class="mt-0">Quick links</h4><ul class="list mt-8"><li><a href="services.html">Services</a></li></ul></div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
+``
